@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Your Expenses</h2>
+    <button onclick="showCreateForm()">+ Create Expense</button>
+    <table id="expenseTable">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Amount</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamic rows here -->
+      </tbody>
+    </table>
+
+    <div id="createExpense" style="display:none;">
+      <h3>Add Expense</h3>
+      <input type="text" id="expenseTitle" placeholder="Title" />
+      <input type="number" id="expenseAmount" placeholder="Amount" />
+      <button onclick="createExpense()">Save</button>
+    </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
